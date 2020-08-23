@@ -1,0 +1,346 @@
+@tailwind base;
+
+@tailwind components;
+
+html,
+.content {
+	scroll-behavior: smooth;
+}
+
+* {
+	font-family: "Alata", sans-serif;
+}
+body {
+	@apply transition-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply text-dark-shades-900 font-bold mb-3 leading-tight mt-2;
+}
+
+h1 {
+	@apply text-4xl;
+}
+
+h2 {
+	@apply text-3xl;
+}
+h3 {
+	@apply text-2xl;
+}
+h4 {
+	@apply text-xl;
+}
+h5 {
+	@apply text-lg;
+}
+h6 {
+	@apply text-base;
+}
+
+p {
+	@apply leading-relaxed mb-4 font-light;
+}
+
+ul {
+	list-style-type: circle;
+	list-style-image: url("img/code.svg");
+	@apply list-inside;
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+textarea,
+select {
+	@apply w-full px-4 py-2 bg-white border-b-2 my-2 shadow-sm;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):focus,
+textarea:focus,
+select:focus {
+	@apply border-main-brand-color-500 outline-none shadow;
+}
+
+input:not([type="radio"]):not([type="radio"]):not([type="submit"]):active,
+textarea:active,
+select:active {
+	@apply border-main-brand-color-300 outline-none;
+}
+
+input[type="submit"],
+button {
+	@apply py-2 px-6  shadow border-main-brand-color-500 bg-main-brand-color-500 text-white mr-4;
+}
+
+input[type="submit"]:hover,
+button:hover {
+	@apply bg-main-brand-color-400;
+}
+
+a {
+	transition-property: all;
+	@apply underline;
+}
+
+a:focus {
+	@apply text-main-brand-color-500;
+}
+
+a:hover {
+	@apply text-main-brand-color-500 no-underline;
+}
+
+.btn {
+	@apply bg-light-shades-500 mb-4 inline-block rounded-sm no-underline font-semibold duration-300 ease-in-out transition-all py-2 px-8 shadow-sm;
+}
+
+.btn:hover {
+	@apply text-light-shades-500 bg-light-shades-700;
+}
+
+.btn:focus {
+	@apply text-light-shades-500 bg-light-shades-700 outline-none;
+}
+
+.btn-primary {
+	@apply bg-main-brand-color-500 text-light-shades-500 shadow-lg;
+}
+
+.btn-primary:hover {
+	@apply bg-main-brand-color-400 text-light-shades-500 border-main-brand-color-400;
+}
+
+.btn-primary:focus {
+	@apply bg-main-brand-color-400 text-light-shades-500;
+}
+
+.btn-outline-primary {
+	@apply bg-transparent text-main-brand-color-500 shadow-none border  border-main-brand-color-500;
+}
+
+.btn-outline-primary:hover {
+	@apply bg-main-brand-color-500 text-light-shades-500;
+}
+.btn-outline-primary:focus {
+	@apply bg-main-brand-color-500 text-light-shades-500;
+}
+
+.btn-secondary {
+	@apply bg-dark-shades-700 text-light-shades-500 shadow-lg;
+}
+
+.btn-secondary:hover {
+	@apply bg-dark-shades-500 text-light-shades-500;
+}
+
+.btn-secondary:focus {
+	@apply bg-dark-shades-500 text-light-shades-500;
+}
+
+.btn-outline-secondary {
+	@apply bg-transparent text-dark-shades-700 shadow-none border  border-dark-shades-700;
+}
+
+.btn-outline-secondary:hover {
+	@apply bg-dark-shades-700 text-light-shades-500;
+}
+
+.btn-outline-secondary:focus {
+	@apply bg-dark-shades-700 text-light-shades-500;
+}
+.btn-group {
+	@apply flex flex-row;
+}
+.btn-group .btn {
+	@apply rounded-none mx-0 border-r-0;
+}
+.btn-group .btn:nth-child(1) {
+	@apply rounded-l-sm;
+}
+.btn-group .btn:nth-last-child(1) {
+	@apply rounded-r-sm border-r;
+}
+
+.brand {
+	@apply absolute bottom-0 top-0 right-0 opacity-25 text-center;
+}
+
+.brand .stroke {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	color: #ffffff00;
+}
+.brand h1 {
+	font-size: 5em;
+	writing-mode: vertical-lr;
+	text-orientation: sideways-right;
+	@apply tracking-tighter leading-none font-bold;
+}
+
+@screen md {
+	.brand h1 {
+		font-size: 6em;
+	}
+}
+
+@supports (-webkit-text-stroke: 0.8px #362d40) {
+	.brand .stroke {
+		-webkit-text-stroke: 0.8px #362d40;
+		-webkit-text-fill-color: #05050500;
+	}
+}
+
+@supports not (-webkit-text-stroke: 0.8px #362d40) {
+	.brand .stroke {
+		text-shadow: -0.8px -0.8px 0 #362d40, 0.8px -0.8px 0 #362d40, -0.8px 0.8px 0 #362d40, 0.8px 0.8px 0 #362d40;
+	}
+}
+
+.hero-title {
+	@apply text-4xl leading-tight tracking-tight mb-4;
+}
+
+@screen md {
+	.hero-title {
+		@apply text-5xl;
+	}
+}
+
+.animated-button:hover {
+	animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.page-title {
+	@apply font-bold text-3xl mb-6 mt-4;
+}
+
+.page-title::after {
+	content: "";
+	@apply h-1 w-12 bg-main-brand-color-500 block;
+}
+
+.text-center.page-title::after,
+.text-center .page-title::after {
+	@apply mx-auto;
+}
+
+.after\:bg-dark::after {
+	@apply bg-dark-shades-900;
+}
+
+.navlink {
+	@apply text-dark-shades-900 no-underline;
+}
+
+.navlink > svg {
+	@apply stroke-current block mx-auto text-dark-shades-900 h-8 w-8;
+}
+
+@screen md {
+	.navlink {
+		@apply text-base;
+	}
+	.navlink > svg {
+		@apply h-12 w-12;
+	}
+}
+
+.navlink:hover {
+	@apply text-main-brand-color-500 font-bold;
+}
+
+.navlink:hover > svg {
+	@apply text-main-brand-color-500;
+}
+
+.navlink.active {
+	@apply text-main-brand-color-500;
+}
+
+.navlink.active > svg {
+	@apply text-main-brand-color-500;
+}
+
+.card {
+	@apply bg-light-shades-500 shadow-lg p-4 rounded-sm;
+}
+
+.badge {
+	@apply py-1 px-2 bg-dark-shades-900 text-light-shades-500 m-1 inline-block;
+}
+
+.shape {
+	z-index: 0;
+	position: absolute;
+	animation-duration: 3.5s;
+}
+
+.light-lilac-edge {
+	left: -40px;
+	top: 130px;
+	width: 50%;
+}
+.light-lilac {
+	bottom: 160px;
+	right: 26%;
+	width: 20%;
+}
+.light-lilac-oval-edge {
+	right: 0;
+	width: 20%;
+	top: 100px;
+}
+header section {
+	z-index: 1;
+	position: relative;
+}
+.hero {
+	min-height: 80vh;
+	overflow: hidden;
+}
+
+.svg-line > div {
+	z-index: 0;
+}
+
+.summary:hover + .details,
+.details:hover {
+	@apply block;
+}
+
+.details {
+	transition-property: display;
+	@apply hidden;
+}
+
+.container {
+	width: calc(100% * 0.85);
+	@apply mx-auto;
+}
+
+@screen md {
+	.container {
+		width: calc(100% * 0.8);
+		@apply mx-auto;
+	}
+}
+@screen lg {
+	.container {
+		width: calc(100% * 0.75);
+		@apply mx-auto;
+	}
+}
+@screen xl {
+	.container {
+		width: calc(100% * 0.7);
+		@apply mx-auto;
+	}
+}
+
+@tailwind utilities;

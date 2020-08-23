@@ -1,0 +1,58 @@
+[
+	{
+		"id": 2,
+		"title": "Membership Management app",
+		"company": "FADEN COOPERATIVE LIMITED",
+		"type": "work",
+		"summary": "The Cooperative needed and online presence. and a way to manage their members nation wide.",
+		"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"tools": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"images": [
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg"
+		]
+	},
+	{
+		"id": 1,
+		"title": "Company website",
+		"company": "TRITECH BUSINESS SOLUTIONS LIMITED",
+		"type": "work",
+		"summary": "The company needed and online presence.",
+		"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"tools": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"images": [
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg"
+		]
+	},
+	{
+		"id": 3,
+		"title": "Crowd funding app",
+		"company": "TRITECH BUSINESS SOLUTIONS LIMITED",
+		"type": "play",
+		"summary": "The company needed and to source funds from individuals for their farm projects.",
+		"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"tools": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"images": [
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg"
+		]
+	},
+	{
+		"id": 4,
+		"title": "Online Store",
+		"company": "KENKE ENTERPRISES",
+		"type": "work",
+		"summary": "Kenke wanted to let the world know about products made in Africa.",
+		"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"tools": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi ut nihil veritatis dignissimos soluta molestiae reprehenderit neque optio quas, nemo distinctio molestias non. Exercitationem quisquam inventore expedita amet eius.",
+		"images": [
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg",
+			"https://cdn.hashnode.com/res/hashnode/image/upload/v1596430094814/NHT7C_mUD.jpeg"
+		]
+	}
+]
